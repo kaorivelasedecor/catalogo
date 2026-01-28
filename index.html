@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kaori Velas & Decor</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+      }
+      .catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+      .produto {
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+      .produto img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .preco {
+        font-weight: bold;
+        margin-top: 8px;
+      }
+
+      .essencias {
+        color: white;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        height: 400px;
+      }
+
+      .essencias-tipo {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        background-color:#212121;
+      }
+
+      .essencias-tipo-texto {
+        font-size: 40px
+      }
+
+      .essencias-lista {
+        background-color: #303030;
+        width: 50%;
+        height: 100%;
+        line-height: 22px;
+      }
+      .essencias-lista p {
+        padding-left: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="display: flex; justify-content: center;">
+      <img src="imagens/logo-kaori.jpg" alt="Logo Kaori" style="max-width: 200px;">
+    </div>
+
+    <h1 style="text-align:center; margin-bottom: 50px">Catálogo de produtos</h1>
+
+    <h2 style="margin-left: 100px;">Home Spray</h2>
+    <div class="catalogo">
+      <div class="produto">
+        <img src="imagens/home-spray-100.jpg" alt="Home Spray 100ml">
+        <h3>Home Spray 100ml</h3>
+        <p>Compacto e prático, é perfeito para levar por aí, até nas viagens.</p>
+        <span class="preco">R$ 19,90</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/home-spray-225.jpg" alt="Home Spray 225ml">
+        <h3>Home Spray 225ml</h3>
+        <p>Perfuma o ambiente com leveza e rapidez. Borrife no ar ou sobre tecidos para prolongar o aroma.</p>
+        <span class="preco">R$ 29,90</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/refil.jpg" alt="Home Spray Refil 500ml">
+        <h3>Home Spray Refil 500ml</h3>
+        <p>Seu aroma preferido em versão refil, pensado para reabastecer o home spray e prolongar o uso no dia a dia.
+          Mais praticidade, melhor aproveitamento e a fragrância Kaori de sempre.</p>
+        <span class="preco">R$ 55,00</span>
+      </div>
+    </div>
+
+    <h2 style="margin-left: 100px">Difusores</h2>
+    <div class="catalogo">
+      <div class="produto">
+        <img src="imagens/difusor-vidro-100.jpg" alt="Difusor de Varetas 100ml">
+        <h3>Difusor de Varetas 100ml</h3>
+        <p>Em frasco de vidro, ideal para quem busca uma fragrância suave e equilibrada no ambiente.
+          Perfeito para perfumar com delicadeza, unindo aroma e decoração em um único produto.</p>
+        <span class="preco">R$ 29,90</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/difusor-pet.jpg" alt="Difusor de Varetas 200ml">
+        <h3>Difusor de Varetas 125ml</h3>
+        <p>Em frasco pet, ideal para quem deseja uma fragrância mais duradoura e presença marcante no ambiente.
+          Perfeito para espaços maiores, trazendo perfume e decoração em um único produto.</p>
+        <span class="preco">R$ 29,90</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/difusor-vidro-100.jpg" alt="Difusor de Varetas 200ml">
+        <h3>Difusor de Varetas 200ml</h3>
+        <p>Em frasco de vidro, ideal para quem deseja uma fragrância mais duradoura e presença marcante no ambiente.
+          Perfeito para espaços maiores, trazendo perfume e decoração em um único produto.</p>
+        <span class="preco">R$ 29,90</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/refil.jpg" alt="Difusor Refil 500ml">
+        <h3>Difusor Refil 500ml</h3>
+        <p>Seu aroma preferido em versão refil, ideal para reabastecer o difusor e manter o ambiente perfumado por mais tempo.
+          Praticidade, economia e a mesma qualidade da fragrância Kaori.</p>
+        <span class="preco">R$ 70,00</span>
+      </div>
+    </div>
+
+    <h2 style="margin-left: 100px">Velas</h2>
+    <div class="catalogo">
+      <div class="produto">
+        <img src="imagens/vela-lata.jpg">
+        <h3>Vela Lata 20g</h3>
+        <p>Em recipiente metálico com tampa e adesivo personalizado.
+          Compacta e delicada, combina praticidade com um visual minimalista, trazendo fragrância e aconchego ao ambiente.</p>
+        <span class="preco">R$ 9,90</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/vela-geleinha.jpg">
+        <h3>Vela Geleinha 30g</h3>
+        <p>Em recipiente de vidro, com opção de tampa em rolha ou metal (consulte disponibilidade).
+          Compacta e charmosa, é ideal para perfumar pequenos ambientes, unindo aconchego e delicadeza na medida certa.</p>
+        <span class="preco">R$ 16,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/vela-geleinha.jpg">
+        <h3>Vela Vidrinho 50g</h3>
+        <p>Em recipiente de vidro com tampa de madeira, possui um visual delicado e elegante.
+          Ideal para compor a decoração de pequenos espaços, criando um clima acolhedor e perfumado.</p>
+        <span class="preco">R$ 22,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/vela-bomboniere.jpg">
+        <h3>Vela Bomboniere 50g</h3>
+        <p>Em recipiente totalmente em vidro, com tampa e acabamento refinado.
+          Uma peça delicada e sofisticada, que une fragrância e estética para perfumar o ambiente com charme.</p>
+        <span class="preco">R$ 35,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/vela-pate.jpg">
+        <h3>Vela Pate 90g</h3>
+        <p>Em recipiente de vidro com tampa de madeira.
+          Elegante e acolhedora, traz um visual natural e atemporal, perfeita para compor a decoração e criar um clima aconchegante.</p>
+        <span class="preco">R$ 34,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/all-black.jpg">
+        <h3>Vela Mini Belém 100g</h3>
+        <p>Em recipiente de vidro com tampa metálica.
+          Compacta e versátil, combina delicadeza e presença, perfumando o ambiente com suavidade e estilo.</p>
+        <span class="preco">R$ 34,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/pianezza.jpg">
+        <h3>Vela Pianezza 1 130g</h3>
+        <p>Em recipiente de vidro com tampa metálica.
+          Com design delicado e sofisticado, perfuma e decora com elegância, trazendo aconchego de forma delicada ao ambiente.</p>
+        <span class="preco">R$ 40,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/pianezza.jpg">
+        <h3>Vela Pianezza 2 150g</h3>
+        <p>Em recipiente de vidro com tampa metálica.
+          Com design delicado e sofisticado, perfuma e decora com elegância, trazendo aconchego na medida certa ao ambiente.</p>
+        <span class="preco">R$ 45,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/vela-whisky.jpg">
+        <h3>Vela Whisky 200g</h3>
+        <p>Em recipiente de vidro com tampa de madeira.
+          Com design robusto e sofisticado, perfuma o ambiente com presença e aconchego, unindo estilo, aroma e decoração de forma harmoniosa.</p>
+        <span class="preco">R$ 52,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/pianezza.jpg">
+        <h3>Vela Pianezza 3 300g</h3>
+        <p>Em recipiente de vidro com tampa metálica.
+          Com design delicado e sofisticado, perfuma e decora com elegância, trazendo aconchego com presença marcante ao ambiente.</p>
+        <span class="preco">R$ 65,00</span>
+      </div>
+    </div>
+
+    <h2 style="margin-left: 100px">Edições Especiais ✨</h2>
+    <div class="catalogo">
+      <div class="produto">
+        <img src="imagens/home-fadas.jpg">
+        <h3>Home Spray Perfume das Fadas 200ml</h3>
+        <p>Uma fragrância encantada com toque perolado, criada para transformar o ambiente com leveza e brilho mágico.
+          Agite e descubra um espetáculo sensorial a cada borrifada.</p>
+        <span class="preco">R$ 29,90</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/mini-bubble.jpg">
+        <h3>Mini Bubble 40g cada</h3>
+        <p>Coloridas, delicadas e cheias de charme.
+          Além de decorativas, são pequenos mimos para transformar qualquer cantinho com cor e personalidade!</p>
+        <span class="preco">R$ 14,90</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/all-black.jpg">
+        <h3>All Black 100g</h3>
+        <p>Recipiente de vidro com tampa de metal, cera preta e um delicado toque de glitter. Sofisticada e marcante, une fragrância, estilo e personalidade.
+          Disponível com detalhes em prata ou dourado (consulte disponibilidade).</p>
+        <span class="preco">R$ 40,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/nossa-senhora.jpg">
+        <h3>Vela Nossa Senhora 170g</h3>
+        <p>Recipiente de vidro com parafina em gel e fragrância suave, desenvolvida para manter a transparência e valorizar a imagem de Nossa Senhora Aparecida.</p>
+        <span class="preco">R$ 60,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/wax-melts.jpg">
+        <h3>Wax Melts 20g</h3>
+        <p>Pequenas peças de cera que aromatizam o ambiente de forma prática.
+          Sem pavio, basta colocar no difusor elétrico, ou rechaud de cerâmica e a fragrância se espalha em minutos.</p>
+        <span class="preco">R$ 14,90</span>
+      </div>
+     </div>
+
+     <h2 style="margin-left: 100px">Linha Literária 📚</h2>
+    <div class="catalogo">
+      <div class="produto">
+        <img src="imagens/hp.jpg">
+        <h3>A Vela Secreta</h3>
+        <p>Descubra o poder da magia em cada chama.
+          Com a fragrância à sua escolha, essa vela transforma o ambiente em pura magia.</p>
+        <span class="preco">R$ 70,00</span>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/velaris.jpg">
+        <h3>Velaris</h3>
+        <p>Criada exclusivamente para a linha Velaris, esta fragrância única mistura notas doces e misteriosas, transformando essa linha em uma experiência aromática inesquecível.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+      <h3>Feitas para iluminar momentos e perfumar sentimentos.</h3>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+      <img src="imagens/insta-kaori.jpg" alt="Insta Kaori" style="width: 250px">
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+    <h2 style="text-align:center;">Nos siga no Instagram</h2>
+    </div>
+
+    <div class="essencias">
+      <div class="essencias-tipo">
+        <span class="essencias-tipo-texto">Difusor</span>
+        <span class="essencias-tipo-texto">e/ou</span>
+        <span class="essencias-tipo-texto">Home Spray</span>
+      </div>
+
+      <div class="essencias-lista">
+        <p><strong>Essências:</strong></p>
+        <ul>
+          <li><strong>Alecrim Vert</strong></li>
+          <li><strong>Bamboo Dreams</strong></li>
+          <li><strong>Chá Branco (Bulhões)</strong></li>
+          <li><strong>Cereja e Avelã</strong></li>
+          <li><strong>Flor de Cerejeira</strong></li>
+          <li><strong>Fresia e Pera (apenas Home Spray)</strong></li>
+          <li><strong>Lavanda Francesa</strong></li>
+          <li><strong>Manga Rosa, nosso carro-chefe e sucesso de vendas.</strong></li>
+          <li><strong>Perfume das Fadas (apenas Home Spray)</strong></li>
+          <li><strong>Sweet Floral</strong></li>
+          <li><strong>Velaris</strong></li>
+          <li><strong>Verbena (apenas Home Spray)</strong></li>
+        </ul>
+        <p>*  Consulte disponibilidade.</p>
+      </div>
+    </div>
+
+  </body>
+</html>
