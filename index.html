@@ -75,12 +75,26 @@
         padding-left: 25px;
       }
 
-      /* @media screen and (max-width: 1200px) {
-        .essencias-lista, .essencias-tipo {
+      @media screen and (max-width: 1200px) {
+        body {
+          padding: 0;
         }
-        .essencias-tipo {
+        .catalogo {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
         }
-      } */
+        .produto {
+          padding: 0;
+          width: 45%;
+        }
+        .essencias-lista {
+          font-size: 0.5rem;
+        }
+        .essencias-tipo-texto {
+          font-size: 1rem;
+        }
+      }
     </style>
   </head>
 
@@ -347,7 +361,7 @@
 
       </div>
 
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; justify-content: center; text-align: center;">
       <h3>Feitas para iluminar momentos e perfumar sentimentos.</h3>
     </div>
 
