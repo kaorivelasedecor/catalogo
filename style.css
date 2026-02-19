@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   background: #ffffff;
   margin: 0;
-  padding: 20px;
+  padding: 50px 20px 0;
   color: #333;
 }
 h1 {
@@ -100,7 +100,7 @@ html {
   flex-wrap: wrap;
   align-items: center;
   height: auto;
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .essencias-tipo {
@@ -129,7 +129,7 @@ html {
 
 @media screen and (max-width: 1200px) {
   body {
-    padding: 0;
+    padding: 50px 0 0;
   }
   .catalogo {
     display: flex;
@@ -147,3 +147,27 @@ html {
     font-size: 1rem;
   }
 }
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 50%;
+  padding: 10px 17px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: inherit
+}
+
+#topBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
