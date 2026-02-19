@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+}
+
+h2 {
+  padding-top: 50px;
+  margin-left: 100px;
+}
+
+.hamburguer-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  background: white;
+  border-radius: 50%;
+  padding: 12px 16px;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  z-index: 9999;
+}
+
+/* Menu escondido */
+.hamburguer-menu {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+
+  z-index: 9999;
+}
+
+/* Links */
+.hamburguer-menu a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+.hamburguer-menu a:hover {
+  color: #c07a5c;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.produto {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.preco {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.essencias {
+  color: white;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.essencias-tipo {
+  width: 50%;
+  height: 440px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#212121;
+}
+
+.essencias-tipo-texto {
+  font-size: 40px
+}
+
+.essencias-lista {
+  background-color: #303030;
+  width: 50%;
+  height: 440px;
+  line-height: 22px;
+}
+.essencias-lista p {
+  padding-left: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0;
+  }
+  .catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .produto {
+    padding: 0;
+    width: 45%;
+  }
+  .essencias-lista {
+    font-size: 0.5rem;
+  }
+  .essencias-tipo-texto {
+    font-size: 1rem;
+  }
+}

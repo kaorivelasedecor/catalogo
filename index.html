@@ -3,109 +3,49 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Kaori Velas & Decor</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #ffffff;
-        margin: 0;
-        padding: 20px;
-        color: #333;
-      }
-      h1 {
-        text-align: center;
-      }
-      .catalogo {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 20px;
-        max-width: 1200px;
-        margin: auto;
-        margin-bottom: 50px;
-      }
-      .produto {
-        background: #fff;
-        border-radius: 10px;
-        padding: 15px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        text-align: center;
-      }
-      .produto img {
-        width: 100%;
-        border-radius: 8px;
-      }
 
-      .preco {
-        font-weight: bold;
-        margin-top: 8px;
-      }
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menuKaori");
 
-      .essencias {
-        color: white;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        height: auto;
-        margin-bottom: 40px;
-      }
-
-      .essencias-tipo {
-        width: 50%;
-        height: 440px;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        background-color:#212121;
-      }
-
-      .essencias-tipo-texto {
-        font-size: 40px
-      }
-
-      .essencias-lista {
-        background-color: #303030;
-        width: 50%;
-        height: 440px;
-        line-height: 22px;
-      }
-      .essencias-lista p {
-        padding-left: 25px;
-      }
-
-      @media screen and (max-width: 1200px) {
-        body {
-          padding: 0;
-        }
-        .catalogo {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        .produto {
-          padding: 0;
-          width: 45%;
-        }
-        .essencias-lista {
-          font-size: 0.5rem;
-        }
-        .essencias-tipo-texto {
-          font-size: 1rem;
+        if (menu.style.display === "flex") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
         }
       }
-    </style>
+
+      function closeMenu() {
+        document.getElementById("menuKaori").style.display = "none";
+      }
+    </script>
   </head>
 
   <body>
+    <div class="hamburguer-btn" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <div id="menuKaori" class="hamburguer-menu">
+      <a href="#homespray" onclick="closeMenu()">Home Spray</a>
+      <a href="#difusores" onclick="closeMenu()">Difusores</a>
+      <a href="#velas" onclick="closeMenu()">Velas</a>
+      <a href="#edicoesespeciais" onclick="closeMenu()">Edições Especiais</a>
+      <a href="#linhaliteraria" onclick="closeMenu()">Linha Literária</a>
+      <a href="#extras" onclick="closeMenu()">Extras</a>
+      <a href="#essencias" onclick="closeMenu()">Essências</a>
+
+    </div>
+
     <div style="display: flex; justify-content: center;">
       <img src="imagens/logo-kaori.jpg" alt="Logo Kaori" style="max-width: 260px;">
     </div>
 
     <h1 style="text-align:center; margin-bottom: 50px">Catálogo de produtos</h1>
 
-    <h2 style="margin-left: 100px;">Home Spray</h2>
+    <h2 id="homespray">Home Spray</h2>
     <div class="catalogo">
       <div class="produto">
         <img src="imagens/home-spray-100.jpg" alt="Home Spray 100ml">
@@ -122,7 +62,7 @@
       </div>
     </div>
 
-    <h2 style="margin-left: 100px">Difusores</h2>
+    <h2 id="difusores">Difusores</h2>
     <div class="catalogo">
       <div class="produto">
         <img src="imagens/difusor-vidro-100.jpg" alt="Difusor de Varetas 100ml">
@@ -174,7 +114,7 @@
       </div>
     </div>
 
-    <h2 style="margin-left: 100px">Velas</h2>
+    <h2 id="velas">Velas</h2>
     <div class="catalogo">
       <div class="produto">
         <img src="imagens/vela-lata.jpg">
@@ -257,7 +197,7 @@
       </div>
     </div>
 
-    <h2 style="margin-left: 100px">Edições Especiais ✨</h2>
+    <h2 id="edicoesespeciais">Edições Especiais ✨</h2>
     <div class="catalogo">
       <div class="produto">
         <img src="imagens/home-fadas.jpg">
@@ -299,7 +239,7 @@
       </div>
      </div>
 
-     <h2 style="margin-left: 100px">Linha Literária 📚</h2>
+     <h2 id="linhaliteraria">Linha Literária 📚</h2>
     <div class="catalogo">
       <div class="produto">
         <img src="imagens/hp.jpg">
@@ -324,7 +264,7 @@
       </div>
     </div>
 
-        <h2 style="margin-left: 100px">Extras</h2>
+        <h2 id="extras">Extras</h2>
     <div class="catalogo">
       <div class="produto">
         <img src="imagens/vidro-fosforo.jpg">
@@ -372,7 +312,7 @@
       </a>
     </div>
 
-    <div class="essencias">
+    <div id="essencias" class="essencias">
       <div class="essencias-tipo">
         <span class="essencias-tipo-texto">Difusor</span>
         <span class="essencias-tipo-texto">e/ou</span>
