@@ -45,7 +45,7 @@ const produtos = document.querySelectorAll(".produto");
 produtos.forEach((produto) => {
   produto.addEventListener("click", () => {
     const imagem = produto.querySelector("img");
-    const titulo = produto.querySelector("h3");
+    const titulo = produto.querySelector("p");
     const preco = produto.querySelector(".preco");
     const descricao = produto.dataset.descricao;
 
