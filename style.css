@@ -28,51 +28,40 @@ h1 {
   position: fixed;
   top: 20px;
   right: 20px;
-
-  background: rgb(27, 27, 27);
+  background: rgb(74 74 74);
   border-radius: 50%;
   padding: 12px 16px;
-
   font-size: 22px;
   cursor: pointer;
-
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-
   z-index: 9999;
 }
 
-/* Menu escondido */
 .hamburguer-menu {
   position: fixed;
   top: 70px;
   right: 20px;
-
-  background: rgb(255, 255, 255);
+  background: rgb(27, 27, 27);
   border-radius: 16px;
   padding: 15px;
-
   display: none;
   flex-direction: column;
   gap: 12px;
-
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-
   z-index: 9999;
 }
 
-/* Links */
 .hamburguer-menu a {
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
-  color: #000000;
+  color: white;
 }
 
 .hamburguer-menu a:hover {
   color: #c07a5c;
 }
 
-/* Scroll suave */
 html {
   scroll-behavior: smooth;
 }
@@ -84,13 +73,22 @@ html {
   max-width: 1200px;
   margin: auto;
 }
+
 .produto {
   background: #272727;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.produto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
 .produto img {
   width: 100%;
   border-radius: 8px;
@@ -99,6 +97,8 @@ html {
 .preco {
   font-weight: bold;
   margin-top: 8px;
+  display: inline-block;
+  font-size: 20px;
 }
 
 #insta {
@@ -127,7 +127,7 @@ html {
 }
 
 .essencias-tipo-texto {
-  font-size: 40px
+  font-size: 40px;
 }
 
 .essencias-lista {
@@ -136,33 +136,16 @@ html {
   height: 440px;
   line-height: 22px;
 }
+
 .essencias-lista p {
   padding-left: 25px;
-}
-
-@media screen and (max-width: 1200px) {
-  .catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .produto {
-    padding: 0 0 10px;
-    width: 45%;
-  }
-  .essencias-lista {
-    font-size: 0.5rem;
-  }
-  .essencias-tipo-texto {
-    font-size: 1rem;
-  }
 }
 
 #topBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: rgb(27, 27, 27);
+  background: rgb(74 74 74);
   border-radius: 50%;
   padding: 10px 17px;
   font-size: 22px;
@@ -173,7 +156,7 @@ html {
   pointer-events: none;
   transition: 0.3s ease;
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
 #topBtn.show {
@@ -181,4 +164,102 @@ html {
   pointer-events: auto;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
+.modal-conteudo {
+  background: #272727;
+  color: #ffffff;
+
+  width: 90vw;
+  max-width: 900px;
+  max-height: 90vh;
+
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+
+  overflow-y: auto;
+}
+
+.modal-conteudo img {
+  width: 100%;
+  max-height: 60vh;
+
+  object-fit: contain;
+
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-conteudo h3 {
+  margin-top: 0;
+}
+
+.modal-conteudo p {
+  line-height: 1.5;
+}
+
+.fechar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fechar-modal:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .catalogo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .catalogo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .produto {
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .preco {
+    font-size: 18px;
+  }
+}
