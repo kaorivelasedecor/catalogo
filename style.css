@@ -105,6 +105,11 @@ html {
   background-color: white;
 }
 
+#insta a {
+  color: white;
+  text-decoration: none;
+}
+
 .essencias {
   color: white;
   height: 400px;
@@ -263,11 +268,20 @@ html {
     font-size: 18px;
   }
 
+  .essencias-tipo-texto {
+    font-size: 30px;
+  }
+
   .essencias-lista, .essencias-tipo {
-    height: 530px;
+    height: 520px;
+  }
+
+  .essencias-lista {
+    font-size: 14px;
   }
 
   #essencias-velas, #essencias-tipo-velas {
     height: 460px;
+    margin-bottom: 40px;
   }
 }
