@@ -262,4 +262,12 @@ html {
   .preco {
     font-size: 18px;
   }
+
+  .essencias-lista, .essencias-tipo {
+    height: 530px;
+  }
+
+  #essencias-velas, #essencias-tipo-velas {
+    height: 460px;
+  }
 }
