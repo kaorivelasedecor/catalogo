@@ -1,13 +1,22 @@
 body {
   font-family: Arial, sans-serif;
-  background: #ffffff;
+  background: #000000;
   margin: 0;
-  padding: 50px 20px 0;
-  color: #333;
+  color: #ffffff;
 }
+
+a:visited {
+  color: inherit;
+}
+
 h1 {
   text-align: center;
   margin: 50px auto 0;
+}
+
+#header {
+  background-color: white;
+  padding: 2%;
 }
 
 .titulo {
@@ -20,7 +29,7 @@ h1 {
   top: 20px;
   right: 20px;
 
-  background: white;
+  background: rgb(27, 27, 27);
   border-radius: 50%;
   padding: 12px 16px;
 
@@ -38,7 +47,7 @@ h1 {
   top: 70px;
   right: 20px;
 
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 16px;
   padding: 15px;
 
@@ -56,7 +65,7 @@ h1 {
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
-  color: #333;
+  color: #000000;
 }
 
 .hamburguer-menu a:hover {
@@ -76,7 +85,7 @@ html {
   margin: auto;
 }
 .produto {
-  background: #fff;
+  background: #272727;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -90,6 +99,10 @@ html {
 .preco {
   font-weight: bold;
   margin-top: 8px;
+}
+
+#insta {
+  background-color: white;
 }
 
 .essencias {
@@ -128,9 +141,6 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
-  body {
-    padding: 50px 0 0;
-  }
   .catalogo {
     display: flex;
     flex-wrap: wrap;
@@ -152,7 +162,7 @@ html {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: white;
+  background: rgb(27, 27, 27);
   border-radius: 50%;
   padding: 10px 17px;
   font-size: 22px;
@@ -170,4 +180,5 @@ html {
   opacity: 1;
   pointer-events: auto;
 }
+
 
