@@ -5,8 +5,11 @@ body {
   color: #ffffff;
 }
 
-a:visited {
-  color: inherit;
+a,
+a:visited,
+a:active {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 h1 {
@@ -284,4 +287,20 @@ html {
     height: 460px;
     margin-bottom: 40px;
   }
+
+  .link-comprar,
+  .link-comprar:visited,
+  .link-comprar:active {
+    color: #ffffff;
+    text-decoration: underline;
+    background: transparent;
+    border: none;
+    display: inline;
+    padding: 0;
+  }
+
+  .link-comprar:hover {
+    color: #c07a5c;
+  }
+
 }
